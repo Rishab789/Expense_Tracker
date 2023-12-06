@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+.main {
+    /* border: 1px solid black; */
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+}
+
+.balance-title {
+    font-weight: bold;
+}
+
+.balance {
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.expense-display {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.border {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.item-div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.add-items {
+
+    display: grid;
+    grid-template-columns: 10fr 1fr 1fr;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 5px;
+
+}
+
+.bi-trash3 {
+    cursor: pointer;
+    color: red;
+}
+
+#item-title {
+
+    width: 100%;
+    padding: 5px 0 5px 0;
+
+
+
+}
+
+
+#item-amount {
+    width: 100%;
+    padding: 5px 0 5px 0;
+}
+
+button {
+    width: 100%;
+    padding: 5px 0 5px 0;
+    color: #fff;
+    background-color: blueviolet;
+    border: none;
+    cursor: pointer;
+}
