@@ -38,7 +38,7 @@ function submitHandler(event) {
 
 
 
-    ////Here You have to start . you are calculating the income and exxpense here and putting the income and expense to the local storage.
+    //Here You have to start . you are calculating the income and exxpense here and putting the income and expense to the local storage.
 
     // Calculate the new income and expense
     let totalIncome = items.reduce((total, item) => {
@@ -99,30 +99,6 @@ function localStorageGet() {
 
     let items = JSON.parse(localStorage.getItem("items")) || [];
     let balanceItems = JSON.parse(localStorage.getItem('balanceItems')) || [];
-    let balanceElement = document.querySelector('.balance');
-    let incomeElement = document.querySelector('.income');
-    let expenseElement = document.querySelector('.expense');
-
-
-
-    let totalIncome = items.reduce((total, item) => {
-        return total + (item.amount > 0 ? Math.abs(item.amount) : 0);
-    }, 0);
-
-    let totalExpense = items.reduce((total, item) => {
-        return total + (item.amount < 0 ? Math.abs(item.amount) : 0);
-    }, 0);
-
-
-    // Update the displayed income, expense, and balance
-    income = totalIncome;
-    incomeElement.innerText = income;
-
-    expense = totalExpense;
-    expenseElement.innerText = expense;
-
-    balance = income - expense;
-    balanceElement.innerText = balance;
 
 
 
