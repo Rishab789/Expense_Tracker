@@ -98,11 +98,7 @@ function localStorageGet() {
 
 
     let items = JSON.parse(localStorage.getItem("items")) || [];
-    let balanceItems = JSON.parse(localStorage.getItem('balanceItems')) || [];
 
-
-
-    let itemDiv = document.querySelector(".item-div");
 
     items.forEach(item => {
         let p1 = document.createElement('p');
@@ -126,9 +122,6 @@ function localStorageGet() {
                 let items = JSON.parse(localStorage.getItem("items")) || [];
                 let indexToRemove = items.filter(item => item.id !== iconId);
                 items = indexToRemove;
-
-
-
                 localStorage.setItem("items", JSON.stringify(items));
                 uiUpdate();
 
